@@ -1,28 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>Is this Love</h2>
+    <Karaoke
+      :audio-url="isThisLove.audioUrl"
+      :subtitle-url="isThisLove.subtitleUrl"
+      :images="isThisLove.images"
+    />
+    <h2>House of the Rising Sun</h2>
+    <Karaoke
+      :audio-url="houseOfTheRisingSun.audioUrl"
+      :subtitle-url="houseOfTheRisingSun.subtitleUrl"
+      :images="houseOfTheRisingSun.images"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Karaoke from './components/Karaoke'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Karaoke
+  },
+  data() {
+    return {
+      isThisLove: {
+        images: [
+          'https://source.unsplash.com/user/erondu',
+          'https://source.unsplash.com/user/polarmermaid',
+          'https://source.unsplash.com/user/guillaumeissaly29'
+        ],
+        audioUrl: '/BOB MARLEY - IS THIS LOVE/BOB MARLEY - IS THIS LOVE.mp3',
+        subtitleUrl: '/BOB MARLEY - IS THIS LOVE/BOB MARLEY - IS THIS LOVE.str'
+      },
+      houseOfTheRisingSun: {
+        images: [
+          'https://source.unsplash.com/user/ceveoh',
+          'https://source.unsplash.com/user/dbc23',
+          'https://source.unsplash.com/user/heftiba'
+        ],
+        audioUrl: '/The Animals House Of The Rising Sun/The Animals House Of The Rising Sun.mp3',
+        subtitleUrl: '/The Animals House Of The Rising Sun/The Animals House Of The Rising Sun.str'
+      }
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
