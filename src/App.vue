@@ -31,8 +31,8 @@ export default {
           'https://source.unsplash.com/user/polarmermaid',
           'https://source.unsplash.com/user/guillaumeissaly29'
         ],
-        audioUrl: '/BOB MARLEY - IS THIS LOVE/BOB MARLEY - IS THIS LOVE.mp3',
-        subtitleUrl: '/BOB MARLEY - IS THIS LOVE/BOB MARLEY - IS THIS LOVE.str'
+        audioUrl: './BOB MARLEY - IS THIS LOVE/BOB MARLEY - IS THIS LOVE.mp3',
+        subtitleUrl: './BOB MARLEY - IS THIS LOVE/BOB MARLEY - IS THIS LOVE.str'
       },
       houseOfTheRisingSun: {
         images: [
@@ -40,8 +40,8 @@ export default {
           'https://source.unsplash.com/user/dbc23',
           'https://source.unsplash.com/user/heftiba'
         ],
-        audioUrl: '/The Animals House Of The Rising Sun/The Animals House Of The Rising Sun.mp3',
-        subtitleUrl: '/The Animals House Of The Rising Sun/The Animals House Of The Rising Sun.str'
+        audioUrl: './The Animals House Of The Rising Sun/The Animals House Of The Rising Sun.mp3',
+        subtitleUrl: './The Animals House Of The Rising Sun/The Animals House Of The Rising Sun.str'
       }
     }
   }
